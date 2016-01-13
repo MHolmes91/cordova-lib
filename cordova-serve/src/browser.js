@@ -89,7 +89,7 @@ module.exports = function (opts) {
 function getBrowser(target, dataDir) {
     dataDir = dataDir || 'temp_chrome_user_data_dir_for_cordova';
 
-    var chromeArgs = ' --disable-web-security --user-data-dir=/tmp/' + dataDir;
+    var chromeArgs = ' --no-default-browser-check --disable-web-security --user-data-dir=/tmp/' + dataDir;
     var browsers = {
         'win32': {
             'ie': 'iexplore',
